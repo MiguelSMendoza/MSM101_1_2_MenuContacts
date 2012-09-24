@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/logoDescription"
+        android:src="@drawable/netrunners" />  
+    <TextView
+        android:id="@+id/nameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:text="@string/nameLabel"/>
+   <EditText
+        android:id="@+id/Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/logo"
+        android:layout_below="@id/nameLabel"
+        android:ems="10"
+        android:inputType="textCapWords">
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/phoneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Name"
+        android:text="@string/phoneLabel"/>
+
+
+    <EditText
+       android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/phoneLabel"
+        android:layout_alignRight="@+id/Name"
+        android:layout_below="@id/phoneLabel"
+        android:ems="10"
+        android:inputType="phone">
+
+    </EditText>
+
+</RelativeLayout>
